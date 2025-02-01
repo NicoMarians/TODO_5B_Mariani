@@ -1,0 +1,56 @@
+.back-container {
+    width:60%;  
+    background-color: gray; 
+    margin:auto; 
+    overflow-y: scroll;
+    border-radius:15px;
+    flex-direction: column;
+}
+
+.delete-button {
+    width:50px;
+    height:50px;
+    background-color: red;
+    text-align: center;
+    float:right;
+    padding-right:1;
+}
+
+.add-button {
+    width:50px;
+    height:50px;
+    background-color: green;
+    text-align: center;
+    float:right;
+    padding-right:1;
+}
+
+.activity-name {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 80%; 
+  }
+
+  .screen-shadow {
+    position: absolute;
+    width:1000px;
+    height:1000px;
+    opacity: 40%;
+    background-color: black;
+    z-index: 2;
+    align-items: center;
+    margin: auto;
+  }
+
+  .input-form {
+    position:absolute;
+    background-color: white;
+    z-index: 3;
+    width:400px;
+    height: 300px;
+    border-radius: 15px;
+    margin-left:auto;
+    margin-right:auto;
+  }
