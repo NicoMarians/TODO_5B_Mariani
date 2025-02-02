@@ -9,16 +9,18 @@
 </head>
 <body style="margin:0">
 
-    <div >
-        <div class="screen-shadow">
-            
-        </div>
-        <div style="align-items:center; justify-items:center">
+    <div class="hidden">
+        <div class="screen-shadow"></div>
+        <div style="z-index: 3; position:absolute; top:20%;left: 50%;transform: translate(-50%,0);">
             <div class="input-form">
-                
+                <input class="input-normali" placeholder="Attività">
+                <input class="input-normali" placeholder="Data">
+                <input class="input-normali" placeholder="Ora">
+                <textarea class="input-grandi" placeholder="Descrizione"></textarea>
+                <button class="button-cancella">Cancella</button>
+                <button class="button-salva">Salva</button>
             </div>
         </div>
-      
     </div>
 
     <div style="padding-top: 3%;">
@@ -26,26 +28,45 @@
             <div style="text-align: center;">
                 <h1>TODO LIST</h1>
                 <div style="text-align: left; padding-bottom:2%;">
-                    <a href=""><h1 class="activity-name">Attività</h1></a>
+                    <h1 class="activity-name">Aggiungi attività</h1>
                     <button class="add-button"><b>+</b></button>
                 </div>
                 <div style="text-align: left; padding-bottom:2%;">
-                    <a href=""><h1 class="activity-name">Attività</h1></a>
+                    <a href=""><h1 class="activity-name">Attività | Data | Ora</h1></a>
                     <button class="delete-button"><b>X</b></button>
                 </div>
                 <div style="text-align: left; padding-bottom:2%;">
-                    <a href=""><h1 class="activity-name">Attività</h1></a>
+                    <a href=""><h1 class="activity-name">Attività | Data | Ora</h1></a>
                     <button class="delete-button"><b>X</b></button>
                 </div>
                 <div style="text-align: left; padding-bottom:2%;">
-                    <a href=""><h1 class="activity-name">Attività</h1></a>
+                    <a href=""><h1 class="activity-name">Attività | Data | Ora</h1></a>
+                    <button class="delete-button"><b>X</b></button>
+                </div>
+
+                <div style="text-align: left; padding-bottom:2%;">
+                    <a href=""><h1 class="activity-name">Attività | Data | Ora</h1></a>
+                    <button class="delete-button"><b>X</b></button>
+                </div>
+
+                <div style="text-align: left; padding-bottom:2%;">
+                    <a href=""><h1 class="activity-name">Attività | Data | Ora</h1></a>
+                    <button class="delete-button"><b>X</b></button>
+                </div>
+
+                <div style="text-align: left; padding-bottom:2%;">
+                    <a href=""><h1 class="activity-name">Attività | Data | Ora</h1></a>
+                    <button class="delete-button"><b>X</b></button>
+                </div>
+
+                <div style="text-align: left; padding-bottom:2%;">
+                    <a href=""><h1 class="activity-name">Attività | Data | Ora</h1></a>
                     <button class="delete-button"><b>X</b></button>
                 </div>
                 <br>
             </div>
         </div>
     </div>
-    L'altezza viene adattata nel JS
     
 </body>
 </html>
