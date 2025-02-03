@@ -2,7 +2,7 @@
     position:absolute;
     width:60%; 
     height:90%;
-    background-color: gray; 
+    background-color: rgb(98, 160, 247); 
     left:50%;
     overflow-y: scroll;
     border-radius:15px;
@@ -17,7 +17,7 @@
     text-align: center;
     float:right;
     margin-right:10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .add-button {
@@ -27,7 +27,7 @@
     text-align: center;
     float:right;
     margin-right:10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .activity-name {
@@ -37,7 +37,17 @@
     text-overflow: ellipsis; 
     max-width: 80%; 
     margin-left:10px;
+    text-decoration: underline;
   }
+
+.title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  max-width: 80%; 
+  margin-left:10px;
+}
 
   .screen-shadow {
     position: absolute;
@@ -52,14 +62,13 @@
     background-color: white;
     z-index: 3;
     width:400px;
-    height:305px;
+    height:330px;
     border-radius: 15px;
     padding-top:20px;
     padding-left:20px;
-
   }
 
-  .input-normali {
+  .input-normali{
     width:370px;
     height:30px;
     font-size:20px;
@@ -96,4 +105,20 @@
  
  .hidden {
     display: none;
+ }
+
+ .data-ora-checkbox-yes {
+  width: 30px;
+  height: 30px;
+  margin-top:-40px;
+  background-color: greenyellow;
+  margin-bottom:10px;
+ }
+
+ .data-ora-checkbox-no {
+  width: 30px;
+  height: 30px;
+  margin-top:-40px;
+  background-color: red;
+  margin-bottom:10px;
  }
