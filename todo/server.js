@@ -1,10 +1,13 @@
 const express = require("express");
-const cors = require("cors");
-
 const app = express();
-app.use(cors()); 
-
-app.use(express.json());
+const bodyParser = require('body-parser');
+const http = require("http");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+   extended: true
+}));
+const path = require('path');
+app.use("/", express.static(path.join(__dirname, "public")));
 
 const todos = [];
 
@@ -23,9 +26,7 @@ app.delete("/todo/:id", (req, res) => {
    res.json({ result: "Ok" });
 });
 
-const path = require("path");
-app.use(express.static(path.join(__dirname, "public")));
 
-const server = app.listen(80, () => {
+const server = app.listen(5500, () => {
    console.log("- server running");
 });

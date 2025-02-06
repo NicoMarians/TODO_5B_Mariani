@@ -1,6 +1,6 @@
 export function addActivity(valore) {
     return new Promise((resolve, reject) => {
-        fetch("http://127.0.0.1:80/todo/add", {
+        fetch("/todo/add", {
            method: 'POST',
            headers: {
               "Content-Type": "application/json"
@@ -15,7 +15,7 @@ export function addActivity(valore) {
 }
 export function removeActivity(valore) {
    return new Promise((resolve, reject) => {
-      fetch("http://127.0.0.1:80/todo/"+valore, {
+      fetch("/todo/"+valore, {
          method: 'DELETE',
          headers: {
             "Content-Type": "application/json"
@@ -30,7 +30,7 @@ export function removeActivity(valore) {
   
 export function download() {
     return new Promise((resolve, reject) => {
-        fetch("http://127.0.0.1:80/todo")
+        fetch("/todo")
         .then((response) => response.json())
         .then((dati) => {
            resolve(dati); 
