@@ -14,7 +14,7 @@ export  const createTable  = (newElement) => {
             `;
             tableData.forEach((activity,index) => {
                 line += `<div style="text-align: left; padding-bottom:2%;">`;
-                line += `<a id="modify-${index}"><h1 class="activity-name ">${activity.name} | ${activity.date} | ${activity.time}</h1></a>`;
+                line += `<a id="modify-${index}"><h1 class="activity-name ">${activity.name} | ${activity.date === undefined ? "" : activity.date } | ${activity.time === undefined ? "" : activity.time}</h1></a>`;
                 line += `<button class="delete-button", id="delete-button-${index}"><b>X</b></button>`;
                 line += `</div>`;
             });
@@ -56,9 +56,9 @@ export  const createTable  = (newElement) => {
                 }
 
                 document.getElementById(`delete-button-${index}`).onclick = () => {
-                    removeActivity(index).then((response) => {
-                        pubSub.publish("tableRender");
-                    })
+                    removeActivity(tableData[index].id).then((response) => {
+                            pubSub.publish("tableRender");
+                    });
                 }
             });
 

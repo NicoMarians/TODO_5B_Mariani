@@ -5,6 +5,7 @@ import { createForm,createTable, pubSub } from "./components.js";
 
 
 download().then((newData) => {
+    console.log(newData);
     const table = createTable(document.getElementById("listDiv"));
     table.setTableData(newData);
 
