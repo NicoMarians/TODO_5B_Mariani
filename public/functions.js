@@ -30,12 +30,10 @@ export function removeActivity(valore) {
   
 export function download() {
     return new Promise((resolve, reject) => {
-        fetch("/todo")
-        .then((response) => response.json())
-        .then((dati) => {
-           resolve(dati); 
-        })
-     }) 
+      fetch("/todo")
+      .then((response) => response.json())
+      .then(data => resolve(data));
+   })
 }
 
 export const hide = (element) => {

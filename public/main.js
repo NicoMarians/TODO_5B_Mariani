@@ -2,6 +2,8 @@ import { download} from "./functions.js";
 import { createForm,createTable, pubSub } from "./components.js";
 
 
+
+
 download().then((newData) => {
     const table = createTable(document.getElementById("listDiv"));
     table.setTableData(newData);
@@ -30,7 +32,3 @@ download().then((newData) => {
 
     });
 });
-
-
-
-
